@@ -1,5 +1,5 @@
 #!/bin/sh
-# x86-mingw32-build.sh.version -- vim: filetype=sh
+# x86-mingw32-build.sh.version -*- sh -*- -- vim: filetype=sh
 # $Id$
 #
 # Version identification for x86-mingw32-build.sh script.
@@ -66,4 +66,4 @@ extend PACKAGE_VERSION . "$PACKAGE_VERSION_PATCH"
 extend PACKAGE_VERSION - "$SNAPSHOT"
 $echo && echo $PACKAGE_VERSION
 
-# $RCSfile$Revision$: end of file
+# $RCSfile$Revision: 1.1.1.1 $: end of file

@@ -1,5 +1,5 @@
 #!/bin/sh
-# x86-mingw32-build.sh -- vim: filetype=sh
+# x86-mingw32-build.sh -*- sh -*- -- vim: filetype=sh
 # $Id$
 #
 # Script to guide the user through the build of a GNU/Linux hosted
@@ -170,4 +170,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file

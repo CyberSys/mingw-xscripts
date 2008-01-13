@@ -1,4 +1,4 @@
-# x86-mingw32-build.sh.dialogue -- vim: filetype=sh
+# x86-mingw32-build.sh.dialogue -*- sh -*- -- vim: filetype=sh
 # $Id$
 #
 # Manage dialogue for interactive execution of x86-mingw32-build script.
@@ -420,4 +420,4 @@ ask "
 isyes $REPLY || die 1 "
 $script: build cancelled at user's request
 "
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file
