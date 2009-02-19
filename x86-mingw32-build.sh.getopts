@@ -1,4 +1,4 @@
-# x86-mingw32-build.sh.getopts -*- sh -*- -- vim: filetype=sh
+# x86-mingw32-build.sh.getopts -*- sh -*- vim: filetype=sh
 # $Id$
 #
 # Interpret command line arguments given to the x86-mingw32-build script.
@@ -60,7 +60,7 @@ do
         --batch | --unattended)
                           BUILD_METHOD=batch ;;
 
-        --dry-run)        RUN=echo ;;
+        --dry-run)        RUN=echo BUILD_PLATFORM='`../config.guess`' ;;
 
         --download)       ALLOW_DOWNLOADS=YES ;;
         --no-download)    ALLOW_DOWNLOADS=NO ;;
@@ -96,4 +96,4 @@ do
 done
 eval set x $new_argv; shift
 
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file
