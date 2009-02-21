@@ -80,7 +80,8 @@ $script: stage $STAGE: build $COMPONENT ..."
 	$RUN prepare binutils-$BINUTILS_VERSION
 	$RUN setbuilddir binutils*
 	$RUN ../configure --prefix="$INSTALL_DIR" --target="$TARGET" \
-	  $GLOBAL_BASE_OPTIONS $BINUTILS_BASE_OPTIONS || die $? \
+	  $GLOBAL_BASE_OPTIONS $BINUTILS_BASE_OPTIONS \
+	  --with-sysroot="${INSTALL_DIR}" || die $? \
           "$unrecoverable configuring binutils"
       fi
       $RUN $MAKE CFLAGS="`echo $CFLAGS_FOR_BINUTILS`" \
@@ -159,4 +160,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.4 $: end of file
+# $RCSfile$Revision: 1.5 $: end of file
