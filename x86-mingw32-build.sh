@@ -25,7 +25,7 @@
 # Software Foundation, 51 Franklin St - Fifth Floor, Boston, MA 02110-1301,
 # USA.
 
-CURDIR=`pwd`
+CURDIR=`pwd` PATH="$PATH:$CURDIR"
 test -r $0.sh.conf && script=$0.sh || script=$0
 . $script.functions
 . $script.conf
@@ -193,4 +193,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.7 $: end of file
+# $RCSfile$Revision: 1.8 $: end of file
