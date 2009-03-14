@@ -140,7 +140,10 @@ $script: stage $STAGE: build $COMPONENT ..."
       $RUN $MAKE $INSTALL_GCC || die $? \
         "$unrecoverable installing gcc"
       cd "$WORKING_DIR"; test $LEAN_BUILD && rm -rf build-gcc
-      ALL_GCC="" INSTALL_GCC=""
+      #
+      # Redefine `make' goals for STAGE 2 build...
+      #
+      ALL_GCC="" INSTALL_GCC="install"
       ;;
 
     headers | mingw-runtime | w32api)
@@ -193,4 +196,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.8 $: end of file
+# $RCSfile$Revision: 1.9 $: end of file
