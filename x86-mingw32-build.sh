@@ -60,7 +60,27 @@ do
   elif isyes $ALLOW_DOWNLOADS
   then
     echo downloading ...
-    $RUN wget $DOWNLOAD_HOST/$FILE || die $? "$script: download failed"
+    #
+    # This kludgy download hack is required to defend against bizarre
+    # behaviour of SourceForge's mirror selection mechanism, which allows
+    # `wget' to apparently succeed, when it should fail; when this occurs,
+    # it actually downloads complete garbage, with an odd and unexpected
+    # name, bearing no resemblance to the file requested.
+    #
+    ( manifest=`echo *`
+      $RUN wget $DOWNLOAD_HOST/$FILE && \
+      { test -f $FILE || \
+	{ for file in `echo *`
+	  do
+	    for keep in $FILE $manifest
+	    do
+	      test "x$file" = "x$keep" && { file="."; break; }
+	    done
+	    test "x$file" = "x." || rm "./$file"
+	  done; false
+	}
+      }
+    ) || die $? "$script: $FILE: download failed"
   else
     die 2 "missing ...
 $script: unable to continue"
@@ -196,4 +216,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.9 $: end of file
+# $RCSfile$Revision: 1.10 $: end of file
