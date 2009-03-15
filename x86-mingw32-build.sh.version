@@ -1,19 +1,19 @@
 #!/bin/sh
-# x86-mingw32-build.sh.version -*- sh -*- -- vim: filetype=sh
+# x86-mingw32-build.sh.version -*- sh -*- vim: filetype=sh
 # $Id$
 #
 # Version identification for x86-mingw32-build.sh script.
 #
-  PACKAGE_VERSION_MAJOR=0
+  PACKAGE_VERSION_MAJOR=1
   PACKAGE_VERSION_MINOR=0
   PACKAGE_VERSION_PATCH=""
 #
 # Define `SNAPSHOT' to a non-null `YYYYMMDD-R' string, only when creating
 # a snapshot release.
 #
-  SNAPSHOT=20061101-1
+  SNAPSHOT=""
 #
-# Copyright (C) 2006, MinGW Project
+# Copyright (C) 2006, 2009, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 #
 # This file is a component of the x86-mingw32-build script; it is not
@@ -66,4 +66,4 @@ extend PACKAGE_VERSION . "$PACKAGE_VERSION_PATCH"
 extend PACKAGE_VERSION - "$SNAPSHOT"
 $echo && echo $PACKAGE_VERSION
 
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file
