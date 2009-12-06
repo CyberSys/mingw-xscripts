@@ -68,7 +68,7 @@ do
     # name, bearing no resemblance to the file requested.
     #
     ( manifest=`echo *`
-      $RUN wget $DOWNLOAD_HOST/$FILE && \
+      $RUN wget $DOWNLOAD_HOST/$FILE$DOWNLOAD_OPTIONS && \
       { test -f $FILE || \
 	{ for file in `echo *`
 	  do
@@ -216,4 +216,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.10 $: end of file
+# $RCSfile$Revision: 1.11 $: end of file
