@@ -1,5 +1,11 @@
 2010-03-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
+	x86-mingw32-build version 1.0.1 (candidate #1) released.
+
+	* All files (r1-0-1-rc1, r1-0-1): Tags assigned at `HEAD'.
+
+2010-03-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
 	Prepare version 1.0.1, release candidate #1.
 
 	* All files: Update copyright notices; include year 2010.
