@@ -5,7 +5,7 @@
 # Script to guide the user through the build of a GNU/Linux hosted
 # MinGW cross-compiler for Win32.
 #
-# Copyright (C) 2006, 2009, MinGW Project
+# Copyright (C) 2006, 2009, 2010, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 # 
 # This is the primary script for the x86-mingw32-build package.
@@ -216,4 +216,4 @@ cd "$WORKING_DIR/.."; eval $RUN $CLEAN_SLATE_ON_EXIT
 echo "done."
 exit 0
 
-# $RCSfile$Revision: 1.11 $: end of file
+# $RCSfile$Revision: 1.12 $: end of file

@@ -3,7 +3,7 @@
 #
 # List of known SourceForge Mirror Sites, hosting packages for download.
 #
-# Copyright (C) 2006, 2009, MinGW Project
+# Copyright (C) 2006, 2009, 2010, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 #
 # This file is a component of the x86-mingw32-build script; it is not
@@ -50,4 +50,4 @@
 # cogent         US                                 North America
 # voxel          US                                 North America
 
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file

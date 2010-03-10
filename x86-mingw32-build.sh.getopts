@@ -3,7 +3,7 @@
 #
 # Interpret command line arguments given to the x86-mingw32-build script.
 #
-# Copyright (C) 2006, 2009, MinGW Project
+# Copyright (C) 2006, 2009, 2010, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 #
 # This file is a component of the x86-mingw32-build script; it is not
@@ -96,4 +96,4 @@ do
 done
 eval set x $new_argv; shift
 
-# $RCSfile$Revision: 1.3 $: end of file
+# $RCSfile$Revision: 1.4 $: end of file

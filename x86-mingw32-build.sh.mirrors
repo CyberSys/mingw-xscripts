@@ -3,7 +3,7 @@
 #
 # Identify a SourceForge Mirror Site, from which to download packages.
 #
-# Copyright (C) 2006, 2009, MinGW Project
+# Copyright (C) 2006, 2009, 2010, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 #
 # This file is a component of the x86-mingw32-build script; it is not
@@ -70,4 +70,4 @@ else
   ALLOW_DOWNLOADS=NO
 fi
 
-# $RCSfile$Revision: 1.4 $: end of file
+# $RCSfile$Revision: 1.5 $: end of file

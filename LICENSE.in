@@ -1,7 +1,7 @@
 .ig
 LICENSE.in for x86-mingw32-build.sh
 
-Copyright (C) 2006, 2009, MinGW Project  <http://www.mingw.org>
+Copyright (C) 2006, 2009, 2010, MinGW Project  <http://www.mingw.org>
 Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 
 x86-mingw32-build is free software; you can redistribute it and/or modify
@@ -67,5 +67,5 @@ at your option,
 choose GPL Version 2,
 or any later version.
 .LP
-# $RCSfile$Revision: 1.1.1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file
 .pl 0

@@ -4,7 +4,7 @@
 # Automates updates of generated files from the x86-mingw32-build CVS
 # (xscripts), and creates distribution tarballs.
 #
-# Copyright (C) 2006, 2009, MinGW Project
+# Copyright (C) 2006, 2009, 2010, MinGW Project
 # Written by Keith Marshall <keithmarshall@users.sourceforge.net>
 # 
 # This is the primary script for the x86-mingw32-build package.
@@ -105,4 +105,4 @@ devel-dist: ; $(MAKE) $(TARBALL)-dev.tar$(ZIPMODE)
 install: install-scripts
 install-scripts:
 
-# $RCSfile$Revision: 1.1 $: end of file
+# $RCSfile$Revision: 1.2 $: end of file

@@ -1,3 +1,15 @@
+2010-03-10  Keith Marshall  <keithmarshall@users.sourceforge.net>
+
+	Prepare version 1.0.1, release candidate #1.
+
+	* All files: Update copyright notices; include year 2010.
+
+	* x86-mingw32-build.sh.version (PACKAGE_VERSION_PATCH): Set it to 1.
+
+	* x86-mingw32-build.sh.conf: Update to current releases of...
+	(BINUTILS_VERSION): ...this; set it to 2.20.1, and ...
+	(RUNTIME_VERSION): this; set it to 3.18.
+
 2009-12-06  Keith Marshall  <keithmarshall@users.sourceforge.net>
 
 	Adapt download URI template for SourceForge's new FRS structure.
